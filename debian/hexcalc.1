@@ -1,0 +1,89 @@
+.TH HEXCALC 1 "November 2025" "hexcalc 1.0.0" "User Commands"
+.SH NAME
+hexcalc \- professional hexadecimal calculator CLI tool
+.SH SYNOPSIS
+.B hexcalc
+[\fIOPERATION\fR] [\fIOPERANDS\fR...] [\fIOPTIONS\fR]
+.SH DESCRIPTION
+.B HexCalc
+is a powerful command-line tool for performing hexadecimal arithmetic
+and bitwise operations with support for multiple operands and various
+output formats.
+.SH OPTIONS
+.SS "Arithmetic Operations"
+.TP
+.BR \-a ", " \-\-add " " \fIHEX\fR...
+Add multiple hexadecimal values
+.TP
+.BR \-s ", " \-\-subtract " " \fIHEX\fR...
+Subtract hexadecimal values sequentially
+.TP
+.BR \-m ", " \-\-multiply " " \fIHEX\fR...
+Multiply multiple hexadecimal values
+.TP
+.BR \-d ", " \-\-divide " " \fIHEX\fR...
+Divide hexadecimal values (integer division)
+.TP
+.BR \-fd ", " \-\-floatDivide " " \fIHEX\fR...
+Divide hexadecimal values (floating-point division)
+.TP
+.BR \-mod ", " \-\-modulo " " \fIHEX\fR " " \fIHEX\fR
+Modulo operation
+.TP
+.BR \-p ", " \-\-power " " \fIHEX\fR " " \fIHEX\fR
+Power operation (base ** exponent)
+.SS "Bitwise Operations"
+.TP
+.BR \-and ", " \-\-bitwiseAnd " " \fIHEX\fR...
+Bitwise AND operation
+.TP
+.BR \-or ", " \-\-bitwiseOr " " \fIHEX\fR...
+Bitwise OR operation
+.TP
+.BR \-xor ", " \-\-bitwiseXor " " \fIHEX\fR...
+Bitwise XOR operation
+.TP
+.BR \-not ", " \-\-bitwiseNot " " \fIHEX\fR
+Bitwise NOT operation
+.TP
+.BR \-ls ", " \-\-leftShift " " \fIHEX\fR " " \fIPOS\fR
+Left shift operation
+.TP
+.BR \-rs ", " \-\-rightShift " " \fIHEX\fR " " \fIPOS\fR
+Right shift operation
+.SS "Output Options"
+.TP
+.BR \-f ", " \-\-format " " {hex,dec,bin,oct,all}
+Output format (default: hex)
+.TP
+.BR \-v ", " \-\-verbose
+Show verbose output with operation details
+.TP
+.BR \-bits ", " \-\-bitWidth " " \fIN\fR
+Bit width for NOT operation (default: 64)
+.TP
+.BR \-h ", " \-\-help
+Show help message and exit
+.TP
+.BR \-\-version
+Show version information and exit
+.SH EXAMPLES
+.TP
+Addition with multiple operands:
+.B hexcalc \-a 0x100 0xFF 0x50
+.TP
+Subtraction:
+.B hexcalc \-s 0x5bbcfd38e33d 0x96
+.TP
+Bitwise AND:
+.B hexcalc \-and 0xFF 0x0F
+.TP
+Show all formats:
+.B hexcalc \-a 0x10 0x20 \-f all
+.SH AUTHOR
+Written by Izai Alejandro Zalles Merino.
+.SH COPYRIGHT
+Copyright \(co 2024-2025 Izai Alejandro Zalles Merino.
+License MIT: <https://opensource.org/licenses/MIT>
+.SH SEE ALSO
+bc(1), dc(1), calc(1)

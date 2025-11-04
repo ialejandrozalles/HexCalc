@@ -1,0 +1,28 @@
+Source: hexcalc
+Section: utils
+Priority: optional
+Maintainer: Izai Alejandro Zalles Merino <izai.zalles@example.com>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-all
+Standards-Version: 4.6.0
+Homepage: https://github.com/izaizalles/hexcalc
+Vcs-Git: https://github.com/izaizalles/hexcalc.git
+Vcs-Browser: https://github.com/izaizalles/hexcalc
+
+Package: hexcalc
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3 (>= 3.6)
+Description: Professional hexadecimal calculator CLI tool
+ HexCalc is a powerful command-line tool for performing hexadecimal
+ arithmetic and bitwise operations. It supports multiple operands
+ and various output formats.
+ .
+ Features:
+  * Arithmetic operations (add, subtract, multiply, divide, modulo, power)
+  * Bitwise operations (AND, OR, XOR, NOT, shifts)
+  * Multiple operands support
+  * Output formats: hexadecimal, decimal, binary, octal
+  * Verbose mode for detailed operation information
+  * Professional CLI interface similar to sqlmap
+ .
+ This tool is useful for penetration testing, reverse engineering,
+ network engineering, and general development tasks.
