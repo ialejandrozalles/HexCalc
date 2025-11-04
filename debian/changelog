@@ -1,6 +1,6 @@
 hexcalc (1.0.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: #XXXXXX)
+  * Initial release
   * Professional hexadecimal calculator CLI tool
   * Support for arithmetic operations
   * Support for bitwise operations
@@ -9,4 +9,4 @@ hexcalc (1.0.0-1) unstable; urgency=medium
   * Verbose mode
   * Professional command-line interface
 
- -- Izai Alejandro Zalles Merino <izai.zalles@example.com>  Mon, 03 Nov 2025 12:00:00 -0400
+ -- Izai Alejandro Zalles Merino <zallesrene@gmail.com>  Mon, 03 Nov 2025 12:00:00 -0400
