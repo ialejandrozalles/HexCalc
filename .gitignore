@@ -1,2 +1,20 @@
+# Swap files
 .*.swp
 *.swp
+
+# Debian build files
+debian/.debhelper/
+debian/hexcalc/
+debian/*.substvars
+debian/files
+debian/debhelper-build-stamp
+debian/*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
